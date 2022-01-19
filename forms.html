@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a pizza buying website">
+    <meta name="author" content="Abhishek Kumar">
+    
+    <title>Pizza site</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header id="main-header">
+        <h1>Abhi's Pizza Site!</h1>
+        <h3>Place your order</h3>
+    </header>
+
+    <main>
+        <div class="centre">
+            <video width="540" height="320" controls autoplay loop>
+                <source src="./videos/intro.mp4" type="video/mp4">
+                Your browser does not support this video!
+            </video>
+            
+            <br/>
+            
+        </div>
+        <section class ="contact-form">
+            <h1><u>Select your favourite Pizza</u></h1>
+        </section>
+        
+        <section>
+            <div class="row">
+                <div class="column">
+                <a href="#delivery"><img src="./images/Farmhouse.jpg" alt="farmhouse" style="width:100%"></a>
+                </div>
+                <div class="column">
+                <a href="#delivery"><img src="./images/Peppy_Paneer.jpg" alt="peppyPaneer" style="width:100%"></a>
+                </div>
+                <div class="column">
+                <a href="#delivery"><img src="./images/Deluxe_Veggie.jpg" alt="DeluxeVeggie" style="width:100%"></a>
+                </div>
+              </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="column">
+                <a href="#delivery"><img src="./images/Non-Veg_Supreme.jpg" alt="nonVegSupreme" style="width:100%"></a>
+                </div>
+                <div class="column">
+                <a href="#delivery"><img src="./images/Pepper_Barbeque_&_Onion.jpg" alt="pepperBarbeque&Onion" style="width:100%"></a>
+                </div>
+                <div class="column">
+                <a href="#delivery"><img src="./images/Dominator.jpg" alt="ChickenDominator" style="width:100%"></a>
+                </div>
+              </div>
+        </section>
+
+
+        <section id="delivery">
+                <form method="post" action="ordered.html">
+                 
+                 <h1><u>Delivery Options</u></h1>
+                 <input name="deliveryMethod" type="radio" value="delivery" style="font-size: 20px;"/>Delivery<br/>
+                 <input name="deliveryMethod" type="radio" value="pickup" style="font-size: 20px;"/>Pickup<br/>   
+                    
+                 <h2><u>Customer Details</u></h2>
+
+                 <input name="name" placeholder="Enter Name" style="height: 30px;" size="50px"><br/>
+                 <br>
+                 <input name="address1" placeholder="Flat no./Plot no." style="height: 30px;" size="50px"/><br />
+                 <br>
+                 <input name="address2" placeholder="Locality/Landmark" style="height: 30px;" size="50px"/><br />
+                 <br>
+                 <input name="city" placeholder="City/District" style="height: 30px;" size="22px"/>
+                 
+                 <input type="state" placeholder="State" style="height: 30px;" size="21px"/><br/>
+                 <br>
+                 <input type="zip" placeholder="Zip Code" style="height: 30px;" size="25px"/><br/>
+                 <br>
+                 <input type="phoneNumber" placeholder="Mobile No." style="height: 30px;" size="25px">
+                 <br/>
+                 <br/>
+                 <br/>
+
+                 <h1><u>Select size of Pizza.</u></h1>
+                 <select name="size" class="size">
+                     <option value="Select Size">Select size</option>
+                     <option value="12">Small - Rs.230</option>
+                     <option value="16">Medium - Rs.405</option>
+                     <option value="18">Large - Rs.575</option>
+                     
+                 </select> 
+                </br>
+                <h1><u>Ingrediants</u></h1>
+                 <div class="row1">
+                     <div class="column1">
+                        <input name="ingrediants" type="checkbox" value="pepperoni"/>Perreroni
+                     </div>
+                     <div class="column1">
+                        <input name="ingrediants" type="checkbox"value="mushroomsi"/>Mushrooms
+                     </div>
+                 </div>
+
+                 <div class="row1">
+                    <div class="column1">
+                       <input name="ingrediants" type="checkbox" value="extracheese"/>Extra cheese
+                    </div>
+                    <div class="column1">
+                       <input name="ingrediants" type="checkbox"value="blackolives"/>Black olives
+                    </div>
+                </div>
+
+                <div class="row1">
+                    <div class="column1">
+                       <input name="ingrediants" type="checkbox" value="onions"/>Onions
+                    </div>
+                    <div class="column1">
+                       <input name="ingrediants" type="checkbox"value="greenPeppers"/>GreenPepper
+                    </div>
+                </div>
+
+                <div class="row1">
+                    <div class="column1">
+                       <input name="ingrediants" type="checkbox" value="freshgarlici"/>Fresh garlic
+                    </div>
+                    <div class="column1">
+                       <input name="ingrediants" type="checkbox"value="tomato"/>Tomato
+                    </div>
+                </div>
+                <br/>
+
+                </form>
+                <a href="ordered.html"><button type="submit" class="button">Place Order</button></a>
+            </br></br></br></br>
+
+        </section>
+
+        <footer>
+            <center>&copy; 2022 Abhishek Kumar <br/>
+                <a href="#">Terms of Service </a> </center>       
+        </footer>
+    </main>
+</body>
+</html>
